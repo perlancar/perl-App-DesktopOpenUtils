@@ -43,9 +43,9 @@ sub open_desktop {
             #log_info "[DRY_RUN] Opening %s in browser with: %s ...", $url, $cmd;
             #log_info "[DRY_RUN] Opening %s ...", $path_or_url;
         } else {
-            log_trace "Opening %s ...", $url;
-            #Desktop::open_desktop($url, $args{all});
-            Desktop::open_desktop($url);
+            log_trace "Opening %s ...", $path_or_url;
+            #Desktop::Open::open_desktop($url, $args{all});
+            Desktop::Open::open_desktop($path_or_url);
         }
     }
     [200];
